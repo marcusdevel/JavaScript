@@ -41,3 +41,35 @@ function IncrementarJuros(valor, juros){
 
  console.log(IncrementarJuros(100,15));
  console.log(IncrementarJuros(100,10));
+
+
+
+
+
+//---------------VALOR FINAL DE UMA ROUPA---------------------------------
+
+//----- 1º FUNÇÃO-----
+ function AdicionarDesconto(valor, desconto){
+    return (valor - (valor * (desconto/100)))
+};
+
+//----- 2º FUNÇÃO-----
+function AplicarJuros(valor, juros){
+    return (valor + (valor * (juros/100)))
+};
+
+//----VARIÁVEIS
+const PrecoDaRoupa = 100;
+const CodigoDePagamento = 3;
+
+
+//------CONDICIONAL---------
+if (CodigoDePagamento === 1){
+    console.log(AdicionarDesconto(PrecoDaRoupa, 10))
+} else if(CodigoDePagamento === 2){
+    console.log(AdicionarDesconto(PrecoDaRoupa, 15))
+} else if(CodigoDePagamento ===3){
+    console.log(PrecoDaRoupa)
+} else{
+    console.log(AplicarJuros(PrecoDaRoupa, 10))
+};
